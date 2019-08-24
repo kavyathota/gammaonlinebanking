@@ -1,0 +1,18 @@
+<input type="date" [(ngModel)]="formdate"/>
+<input type="date" [(ngModel)]="todate"/>
+<button (click)="search(formdate,todate)">SEARCH</button>
+<div *ngIf="show">
+    <table >
+            <tr><th>DATE</th>
+   <th>DESCRIPTION </th> 
+   <th>WITHDRAWAL</th> 
+   <th> DEPOSIT</th>  
+   <th> BALANCE </th></tr>
+   <tr>
+    <td>{{date.getDate()}}-{{date.getMonth()}}-{{date.getFullYear()}}</td>
+   <td>{{description}}</td> 
+   <td> {{withdraw}}</td>  
+   <td> {{deposit}}</td>
+   <td> {{balance}}</td></tr>
+</table>
+</div>

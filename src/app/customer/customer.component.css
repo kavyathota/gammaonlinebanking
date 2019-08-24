@@ -1,0 +1,68 @@
+ h2 {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    position:left;
+    text-align: left;
+  }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+   
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  button {
+    color:lightblue;
+    font-family: verdana;
+    font-size: 20px;
+    width: 50%;
+    padding-left: 50%;
+  
+    position: absolute;
+    top: 50%;
+    text-align: center;
+}
+.navbar {
+  overflow: hidden;
+  background-color:lightcoral;
+  font-family: Arial;
+  width: 100%;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+a {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.form_table { text-align: center; }
+  .full_width .segment_header { text-align: center !important; }
+  .q { float:none;display: inline-block; }
+  table.matrix, table.rating_ranking { margin-left:auto !important;margin-right:auto !important; }
+

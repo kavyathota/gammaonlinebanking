@@ -1,14 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule} from '@angular/forms'
 import { AppComponent } from './app.component';
+import { MainComponent } from './main/main.component';
+import { FlatrouteModule } from './flatroute.module';
+import { CustomerComponent } from './customer/customer.component';
+import { TransferComponent } from './transfer/transfer.component';
+import { StatementComponent } from './statement/statement.component';
+import { UnloggedComponent } from './unlogged/unlogged.component';
+import { LoggedComponent } from './logged/logged.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { BankComponent } from './bank/bank.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainComponent,
+    CustomerComponent,
+    TransferComponent,
+    StatementComponent,
+    UnloggedComponent,
+    LoggedComponent,
+    HomeComponent,
+    LoginComponent,
+    BankComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    FlatrouteModule
   ],
   providers: [],
   bootstrap: [AppComponent]

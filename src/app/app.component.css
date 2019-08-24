@@ -1,0 +1,10 @@
+div {
+
+  margin-top: 100px;
+  position:center;
+  text-align: center; 
+  margin: auto;
+width: 50%;
+border: lightcoral;
+padding: 10px;      
+}

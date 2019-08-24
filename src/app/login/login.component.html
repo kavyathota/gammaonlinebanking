@@ -1,0 +1,11 @@
+<body ><br><br><br>
+<form ngNativeValidate>
+    <p>Username :</p><input type="text" [(ngModel)]="Username" name="t1" placeholder="enter username" required> 
+    <br>
+    <p>Password :</p><input type="password" [(ngModel)]="Password" name="t2" placeholder="enter password" required>
+    <br><br>
+    <button type="submit" class="btn btn-primary" (click)="login(Username,Password)">LOGIN</button>
+    <br><br>
+<h2>{{status}}</h2>
+    </form>
+ 

@@ -1,0 +1,40 @@
+
+div {
+
+    margin-top: 100px;
+    position:center;
+    text-align: center; 
+    margin: auto;
+  width: 50%;
+  border: lightcoral;
+  padding: 10px;      
+  }
+input {
+    display: block;
+    color:lightblue;
+  text-align: center;
+    font-family: verdana;
+    font-size: 20px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  button {
+    color:lightblue;
+    font-family: verdana;
+    font-size: 20px;
+    width: 70%;
+    padding: 10px;
+  }
+  h1{
+    color:black;
+    text-align: center;
+    font-family: verdana;
+        font-size: 80px;
+  }
+  p{
+      color:black;
+      font-size: 140%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-display: bold;
+  }
