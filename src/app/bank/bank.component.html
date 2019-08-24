@@ -1,1 +1,28 @@
-<p>bank works!</p>
+<div class="navbar">
+        <a routerLink="/main/logged/bank/register">Transfer</a> 
+       
+</div>
+<div class="sidebar">
+        <h2 >WELCOME {{aName}}</h2>
+    </div>
+<div id="form-wrapper" style="max-width:500px;margin:auto;">  
+        <router-outlet></router-outlet>
+        </div>
+      
+        <br><br>  
+            <div id="form-wrapper" style="max-width:500px;margin:auto;">  
+                       
+                <div *ngFor="let customer of customers">
+                <div class="solid">
+                    <tr>
+                   <td> <h2>{{customer.cName}}</h2></td>
+                 <td>  <button type="button" class="btn btn-primary" style='margin-right:16px' (click)=modify()>
+                    MODIFY</button></td>
+                <td><button type="button" class="btn btn-primary" style='margin-right:16px' (cilick)=delete()>
+                    DELETE</button></td>
+        </tr> 
+    </div>
+        </div>
+        </div>
+     
+    

@@ -1,0 +1,76 @@
+h2 {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    position:left;
+    text-align: left;
+  }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+   
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+ 
+.navbar {
+  overflow: hidden;
+  background-color:lightcoral;
+  font-family: Arial;
+  width: 100%;
+}
+td{ 
+  margin-right: 10%;
+  margin-left: 5%;
+}
+button{ 
+  margin-right: 50%;
+  margin-left: 5%;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+a {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.form_table { text-align: center; }
+  .full_width .segment_header { text-align: center !important; }
+  .q { float:none;display: inline-block; }
+  table.matrix, table.rating_ranking { margin-left:auto !important;margin-right:auto !important; }
+  .Container input{ /* You Can Name it what you want*/
+    margin-right:16px;
+    }
+    .Container input:last-child{
+    margin-right:0px;
+    /*so the last one dont push the div thas giving the space only between the inputs*/
+    }
+    div.solid {
+      width:auto;
+  margin: auto;
+  border: 1px solid black;}

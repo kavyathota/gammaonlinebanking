@@ -11,6 +11,9 @@ import { HomeComponent } from './home/home.component';
 import { LoggedComponent } from './logged/logged.component';
 import { LoginComponent } from './login/login.component';
 import { BankComponent } from './bank/bank.component';
+import { RegisterComponent } from './register/register.component';
+import { ModifyComponent } from './modify/modify.component';
+import { DeleteComponent } from './delete/delete.component';
 
 export const myroute:Routes=[
   {path:"",redirectTo:"main/unlogged/home",pathMatch:'full'},
@@ -24,8 +27,9 @@ export const myroute:Routes=[
     {path:"transfer",component:TransferComponent},
   {path:"statement",component:StatementComponent}]},
   {path:"bank",component:BankComponent,children:[ 
-    {path:"transfer",component:TransferComponent},
-  {path:"statement",component:StatementComponent}]}
+    {path:"register",component:RegisterComponent},
+  {path:"modify",component:ModifyComponent},
+  {path:"delete",component:DeleteComponent}]}
 ]}]}
  ]
 
