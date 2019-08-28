@@ -1,1 +1,16 @@
-<p>modify works!</p>
+
+<hr>
+
+<label><b>Name </b></label>
+<input type="text" placeholder="Enter name" [(ngModel)]="cname" required>
+
+<label ><b>Account no.</b></label>
+<input type="text" placeholder="Enter Account number" [(ngModel)]="acc" required>
+
+Savings Account: <input type="checkbox" checked="yes" name="accountype" [(ngModel)]="saving"  /><br />
+
+Current Account: <input type="checkbox" name="accountype" [(ngModel)]="current"  /><br /> 
+
+
+<hr>
+<button type="button" btn-primary (click)="registerupdate(cname,acc,accountype)">Register</button>

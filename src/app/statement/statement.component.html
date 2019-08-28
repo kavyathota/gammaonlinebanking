@@ -1,18 +1,19 @@
 <input type="date" [(ngModel)]="formdate"/>
 <input type="date" [(ngModel)]="todate"/>
-<button (click)="search(formdate,todate)">SEARCH</button>
+<button (click)="search()">SEARCH</button>
 <div *ngIf="show">
+       
     <table >
             <tr><th>DATE</th>
    <th>DESCRIPTION </th> 
    <th>WITHDRAWAL</th> 
    <th> DEPOSIT</th>  
    <th> BALANCE </th></tr>
-   <tr>
-    <td>{{date.getDate()}}-{{date.getMonth()}}-{{date.getFullYear()}}</td>
-   <td>{{description}}</td> 
-   <td> {{withdraw}}</td>  
-   <td> {{deposit}}</td>
-   <td> {{balance}}</td></tr>
+   <tr *ngFor="let state of obj1">
+    <td>{{state.date.getDate()}}-{{state.date.getMonth()}}-{{state.date.getFullYear()}}</td>
+   <td>{{state.description}}</td> 
+   <td> {{state.withdraw}}</td>  
+   <td> {{state.deposit}}</td>
+   <td> {{state.balance}}</td></tr>
 </table>
 </div>

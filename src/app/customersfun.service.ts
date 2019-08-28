@@ -6,7 +6,7 @@ import { Customers } from './customers';
 })
 export class CustomersfunService {
 obj:Customers[];
-i:number=0;
+  x: number;
 add(name:string,accountno:string,acctype:string){
  this.obj.push(new Customers(name,accountno,acctype));
  
@@ -18,4 +18,12 @@ add(name:string,accountno:string,acctype:string){
   constructor() { 
     this.obj=[];
   }
+SetIndex(customer:Customers){
+  this.x=this.obj.indexOf(customer);
+  
+}
+getIndex():Number
+{
+  return this.x;
+}
 }

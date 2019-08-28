@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class BankComponent implements OnInit {
   aName:string="kavya";
   customers:Customers[];
+  x: number;
  
   constructor( private service:CustomersfunService,private router:Router) {
 this.get();
@@ -20,11 +21,14 @@ console.log(this.customers);
 get(){
    this.customers=this.service.getcustomers();
  }
- modify(){
+ modify(customer:Customers){
+   this.service.SetIndex(customer);
   this.router.navigate(["/main/logged/bank/modify"]);
  }
- delete()
+ delete(customer:Customers)
  {
+   this.x=this.customers.indexOf(customer);
+   this.customers.splice(this.x,1);
   this.router.navigate(["/main/logged/bank/delete"]);
  }
  ngOnInit() {

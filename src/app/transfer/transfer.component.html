@@ -1,8 +1,11 @@
 
 <div *ngIf="showt">
-<h1>TO ACCOUNT NO : </h1><input type="text" [(ngModel)]="tAccNo"/>
-<h1>AMOUNT : </h1><input type="text" [(ngModel)]="amount"/>
-<h1>DESCRIPTION : </h1><input type="text" [(ngModel)]="description"/>
-<button (click)="tfun(tAccNo,amount)">TRANSFER</button>
+<h1>TO ACCOUNT NO : </h1>
+<input type="text" [(ngModel)]="tAccNo"/>
+<h1>AMOUNT : </h1>
+<input type="text" [(ngModel)]="amount"/>
+<h1>DESCRIPTION : </h1>
+<input type="text" [(ngModel)]="description"/>
+<button (click)="tfun(tAccNo,amount,description,currentDate)" [(ngModel)]=currentDate>TRANSFER</button>
 </div>
 <h2 *ngIf="showstatus">{{status}}</h2>

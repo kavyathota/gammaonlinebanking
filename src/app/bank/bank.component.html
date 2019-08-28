@@ -1,6 +1,6 @@
 <div class="navbar">
-        <a routerLink="/main/logged/bank/register">Transfer</a> 
-       
+        <a routerLink="/main/logged/bank/register">REGISTER NEW CUSTOMER</a> 
+        <a routerLink="/main/unlogged/home">LOGOUT</a>   
 </div>
 <div class="sidebar">
         <h2 >WELCOME {{aName}}</h2>
@@ -16,9 +16,9 @@
                 <div class="solid">
                     <tr>
                    <td> <h2>{{customer.cName}}</h2></td>
-                 <td>  <button type="button" class="btn btn-primary" style='margin-right:16px' (click)=modify()>
+                 <td>  <button type="button" class="btn btn-primary" style='margin-right:16px' (click)=modify(customer)>
                     MODIFY</button></td>
-                <td><button type="button" class="btn btn-primary" style='margin-right:16px' (cilick)=delete()>
+                <td><button type="button" class="btn btn-primary" style='margin-right:16px' (click)=delete(customer)>
                     DELETE</button></td>
         </tr> 
     </div>
