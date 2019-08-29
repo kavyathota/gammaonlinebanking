@@ -14,7 +14,7 @@ export class RegisterComponent implements OnInit {
 
  
   constructor(private router:Router, private service:CustomersfunService) { }
-  register(name:string,accountno:string,acctype:string)
+  register(name:string,accountno:string,acctype:number)
   {
     this.service.add(name,accountno,acctype);
     this.router.navigate(["/main/logged/bank"]);

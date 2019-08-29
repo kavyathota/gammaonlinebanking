@@ -17,9 +17,9 @@ customers:Customers[];
    }
    registerupdate(cname:string,acc:string,accountype:any)
 {
-this.customers[this.x].acc=acc;
+this.customers[this.x].setCaccno(acc);
 this.customers[this.x].cName=cname;
-this.customers[this.x].accountype=accountype;
+this.customers[this.x].cAcctype=accountype;
 this.router.navigate(["/main/logged/bank"]);
 }
   ngOnInit() {

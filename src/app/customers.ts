@@ -1,10 +1,11 @@
 export class Customers {
-  [x: string]: string;
+
     cName:string;
 cAccNum:string;
-cBalance:Number;
-cAcctype:string;
-constructor(name:string,accno:string,acctype:string){
+cBalance:number;
+public cAcctype:number;
+
+constructor(name:string,accno:string,acctype:number){
 this.cName=name;
 this.cAccNum=accno;
 this.cBalance=0;
@@ -25,7 +26,7 @@ public getCname ():string {
   public getCbalance():number {
     return this.cBalance;
   }
-  public setCbalance (value: Number) {
+  public setCbalance (value: number) {
     this.cBalance = value;
   }
 }

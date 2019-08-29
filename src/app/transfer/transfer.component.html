@@ -5,7 +5,7 @@
 <h1>AMOUNT : </h1>
 <input type="text" [(ngModel)]="amount"/>
 <h1>DESCRIPTION : </h1>
-<input type="text" [(ngModel)]="description"/>
-<button (click)="tfun(tAccNo,amount,description,currentDate)" [(ngModel)]=currentDate>TRANSFER</button>
+<input type="text" [(ngModel)]="description"/><br><br>
+<button (click)="tfun(tAccNo,amount,description,currentDate)" [(ngModel)]="currentDate" >TRANSFER</button>
 </div>
 <h2 *ngIf="showstatus">{{status}}</h2>

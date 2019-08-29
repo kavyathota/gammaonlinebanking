@@ -15,6 +15,9 @@ import { BankComponent } from './bank/bank.component';
 import { RegisterComponent } from './register/register.component';
 import { ModifyComponent } from './modify/modify.component';
 import { DeleteComponent } from './delete/delete.component';
+import { DatePipe } from '@angular/common';
+import { DepositComponent } from './deposit/deposit.component';
+import { AddaccountComponent } from './addaccount/addaccount.component';
 
 @NgModule({
   declarations: [
@@ -30,14 +33,16 @@ import { DeleteComponent } from './delete/delete.component';
     BankComponent,
     RegisterComponent,
     ModifyComponent,
-    DeleteComponent
+    DeleteComponent,
+    DepositComponent,
+    AddaccountComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     FlatrouteModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

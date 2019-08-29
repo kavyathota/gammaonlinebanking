@@ -7,7 +7,7 @@ import { Customers } from './customers';
 export class CustomersfunService {
 obj:Customers[];
   x: number;
-add(name:string,accountno:string,acctype:string){
+add(name:string,accountno:string,acctype:number){
  this.obj.push(new Customers(name,accountno,acctype));
  
 }

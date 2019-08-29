@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Statements } from '../statements';
 
 import { StatementService } from '../statement.service';
+import { DatePipe } from '@angular/common';
 
 
 @Component({
@@ -12,32 +13,25 @@ import { StatementService } from '../statement.service';
 export class StatementComponent implements OnInit {
 obj:Statements[];
 obj1:Statements[];
-todate:Date;
-fromdate:Date;
+todate:any = new Date();
+fromdate:any = new Date();
 show:boolean=false;
 i:number=0;
-  constructor(private service:StatementService) { 
+  constructor(private service:StatementService,private datePipe: DatePipe) { 
     this.obj=service.getstatements();
+    this.obj1=[];
   }
- 
+  transformDate(date:Date):any {
+    return this.datePipe.transform(date, 'yyyy-MM-dd'); //whatever format you need. 
+  }
   search()
   {
     for(let objs of (this.obj)){
-    console.log(objs);
-    console.log(this.todate.getDate());
-    //console.log(fdate);
-  //   if(objs.getdate().getFullYear()<this.todate.getFullYear() && objs.getdate().getFullYear()>this.fromdate.getFullYear())
-  //   {
-  //     if(objs.getdate().getMonth()<this.todate.getMonth() && objs.getdate().getMonth()>this.fromdate.getMonth())
-  //     {
-  //       if(objs.getdate().getDate()<this.todate.getDate() && objs.getdate().getDate()>this.fromdate.getDate())
-  //     console.log(objs.getdate());
-  //     this.obj1.push(objs);
-  //     }
-  //   }
+  if(this.transformDate(objs.getdate())<this.todate && this.transformDate(objs.getdate())<this.todate) 
+     this.obj1.push(objs);
+
   }
-  
-this.show=true;
+  this.show=true;
   }
 
   ngOnInit() {

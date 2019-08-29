@@ -14,6 +14,7 @@ import { BankComponent } from './bank/bank.component';
 import { RegisterComponent } from './register/register.component';
 import { ModifyComponent } from './modify/modify.component';
 import { DeleteComponent } from './delete/delete.component';
+import { DepositComponent } from './deposit/deposit.component';
 
 export const myroute:Routes=[
   {path:"",redirectTo:"main/unlogged/home",pathMatch:'full'},
@@ -29,7 +30,8 @@ export const myroute:Routes=[
   {path:"bank",component:BankComponent,children:[ 
     {path:"register",component:RegisterComponent},
   {path:"modify",component:ModifyComponent},
-  {path:"delete",component:DeleteComponent}]}
+  {path:"delete",component:DeleteComponent},
+  {path:"deposit",component:DepositComponent}]}
 ]}]}
  ]
 

@@ -1,0 +1,8 @@
+
+
+    <button value="savings" (click)=saving() [disabled]="show1">Savings</button>
+    <button value="current" (click)=current() [disabled]="show2">Current</button>
+<div *ngIf="show">
+<h1>Enter Amount:</h1>
+<input type="number" [(ngModel)]="amount"/>
+<button (click)="deposit(amount)" >DEPOSIT</button></div>
